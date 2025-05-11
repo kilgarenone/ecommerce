@@ -27,6 +27,8 @@ const DATA_DIR: string = path.join(
 );
 const ORDER_FILE_NAME = process.env.ORDERS_FILE_NAME || "orders.json";
 const INVENTORY_FILE_NAME = process.env.INVENTORY_FILE_NAME || "inventory.json";
+const INVENTORY_LOCKS_FILE_NAME =
+    process.env.INVENTORY_LOCKS_FILE_NAME || "inventory.locks.json";
 
 const initialInventory: Product[] = [
     {
@@ -47,10 +49,12 @@ const initialInventory: Product[] = [
 
 const ordersFilePath = path.join(DATA_DIR, ORDER_FILE_NAME);
 const inventoryFilePath = path.join(DATA_DIR, INVENTORY_FILE_NAME);
+const inventoryLocksFilePath = path.join(DATA_DIR, INVENTORY_LOCKS_FILE_NAME);
 
 async function initializeTestFiles() {
     await fs.mkdir(DATA_DIR, { recursive: true }); // Use the resolved data directory
     await fs.writeFile(ordersFilePath, JSON.stringify([]));
+    await fs.writeFile(inventoryLocksFilePath, JSON.stringify({}));
     await fs.writeFile(
         inventoryFilePath,
         JSON.stringify(initialInventory, null, 2),
