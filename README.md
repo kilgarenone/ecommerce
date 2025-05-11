@@ -153,3 +153,7 @@ npm run build
 - Folder structure as flat as possible
 - Minimal and intentional configuration in toolings over copy-pasting from blog posts or ChatGPT.
 - And know when to defer to academic authority as seen in the `tsconfig.json` config
+
+# Disclosure of Generative AI usage
+
+This might get me disqualified, but I want to be honest: I began by copy & paste the entire text of the take home test PDF file into Gemini 2.0 Pro (preview). Then I made heavy changes to it to what it is now guided by the principles, taste, opinion, and limited past experience and knowledge. GenAI also helped me with Typescript syntax. I do not use AI agent in IDE, such as Cursor. My use of GenAI was limited to asking piecemeal questions on their website.
