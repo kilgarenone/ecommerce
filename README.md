@@ -53,9 +53,16 @@ I also implemented basic input validation for the endpoints using the [Zod](http
 # Getting started
 
 1. Install Node.js `v22`
-2. Run `npm install`
-3. Copy `.env.example` to a new file called `.env`
-4. Run `npm start`.
+2. In your terminal,
+
+```
+git clone https://github.com/kilgarenone/ecommerce.git
+cd ecommerce
+```
+
+3. Run `npm install`
+4. Copy `.env.example` to a new file called `.env`
+5. Run `npm start`.
 
 The server will start at `http://localhost:3000`
 
