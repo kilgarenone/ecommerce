@@ -54,7 +54,7 @@ I also implemented basic input validation for the endpoints using the [Zod](http
 
 1. Install Node.js `v22`
 2. Run `npm install`
-3. Rename `.env.example` file to `.env`
+3. Copy `.env.example` to a new file called `.env`
 4. Run `npm start`.
 
 The server will start at `http://localhost:3000`
